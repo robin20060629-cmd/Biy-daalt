@@ -1,9 +1,8 @@
 import { RateLimiter } from "../api/RateLimiter";
 
-/**
- * Fixed Window алгоритмын хэрэгжүүлэлт. 
- * Энэ класс нь public биш бөгөөд зөвхөн сан дотроо ашиглагдана.
- */
+// Fixed Window алгоритмын хэрэгжүүлэлт.
+// Энэ класс нь public биш бөгөөд зөвхөн сан дотроо ашиглагдана
+
 export class FixedWindowLimiter implements RateLimiter {
     private requests = new Map<string, number>();
 
