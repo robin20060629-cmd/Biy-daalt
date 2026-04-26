@@ -1,0 +1,42 @@
+openapi: 3.0.0
+info:
+  title: Library Rental API
+  version: 1.0.0
+  description: Ном зээлэх болон буцаах үйлчилгээний API
+servers:
+  - url: http://localhost:3000
+paths:
+  /rent:
+    post:
+      summary: Ном зээлэх
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                bookId:
+                  type: integer
+      responses:
+        '200':
+          description: Амжилттай зээллээ
+  /return:
+    post:
+      summary: Ном буцаах
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                bookId:
+                  type: integer
+      responses:
+        '200':
+          description: Амжилттай буцаалаа
