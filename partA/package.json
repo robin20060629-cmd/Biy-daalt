@@ -1,0 +1,6 @@
+{
+    "name": "part-a-library-design",
+    "version": "1.0.0",
+    "description": "API design and Library implementation",
+    "private": true
+}
