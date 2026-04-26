@@ -1,0 +1,60 @@
+{
+	"info": {
+		"name": "Library API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Rent Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"user123\",\n    \"bookId\": 101\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/rent",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"rent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"user123\",\n    \"bookId\": 101\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/return",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"return"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
