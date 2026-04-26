@@ -10,10 +10,9 @@ let books = [
 
 let rentals = []; // { userId: string, bookId: number }
 
-/**
- * Б.1 - Ном зээлэх API
- * Бизнес дүрэм: Хэрэглэгч хамгийн ихдээ 5 ном зээлж болно.
- */
+ // Б.1 - Ном зээлэх API
+ // Бизнес дүрэм: Хэрэглэгч хамгийн ихдээ 5 ном зээлж болно.
+
 app.post('/rent', (req, res) => {
     const { userId, bookId } = req.body;
 
@@ -39,9 +38,8 @@ app.post('/rent', (req, res) => {
     res.json({ message: "Амжилттай зээллээ!", currentRentals: userRentals.length + 1 });
 });
 
-/**
- * Б.2 - Ном буцаах API
- */
+ // Б.2 - Ном буцаах API
+
 app.post('/return', (req, res) => {
     const { userId, bookId } = req.body;
     
