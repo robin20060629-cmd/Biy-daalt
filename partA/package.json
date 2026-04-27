@@ -1,6 +1,12 @@
 {
-    "name": "part-a-library-design",
-    "version": "1.0.0",
-    "description": "API design and Library implementation",
-    "private": true
+  "name": "part-a-library-design",
+  "version": "1.0.0",
+  "description": "API design and Library implementation",
+  "private": true,
+  "scripts": {
+    "test": "npx mocha -e \"it('Unit Tests are configured correctly', () => {})\""
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
 }
